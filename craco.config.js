@@ -15,7 +15,8 @@ module.exports = {
         {
           legacy: true
         }
-      ]
+      ],
+      'transform-remove-console'
     ],
     loaderOptions: (babelLoaderOptions, { env, paths }) => babelLoaderOptions
   },
@@ -70,9 +71,6 @@ module.exports = {
           }
         }
       }
-    },
-    {
-      plugin: 'transform-remove-console'
     }
   ]
 };
