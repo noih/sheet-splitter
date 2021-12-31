@@ -1,0 +1,11 @@
+.content {
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  padding: 5px;
+  line-height: 0;
+  z-index: 10;
+}
+
+.canvas {
+
+}

@@ -1,0 +1,30 @@
+.bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, .6);
+
+  padding: 3px;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  margin: 2px;
+}
+
+.group > *:not(:last-child) {
+  margin-right: 5px;
+}
+
+.coordinate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  background-color: rgba(0, 0, 0, .2);
+}

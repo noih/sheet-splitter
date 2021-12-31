@@ -1,0 +1,20 @@
+.view {
+  background-color: rgba(0, 0, 0, .2);
+  flex: 1;
+  position: relative;
+}
+
+.cell {
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  font-size: 16px;
+  color: black;
+  zoom: 0.5;
+}
