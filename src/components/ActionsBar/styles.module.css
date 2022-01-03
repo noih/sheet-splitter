@@ -28,3 +28,12 @@
   min-width: 200px;
   background-color: rgba(0, 0, 0, .2);
 }
+
+.mark {
+  margin-left: auto;
+}
+
+.github {
+  height: 32px;
+  width: 32px;
+}

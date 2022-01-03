@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import {
-  Button, Upload, InputNumber, Radio, Switch, Typography, Checkbox
+  Button, Upload, InputNumber, Radio, Typography, Checkbox
 } from 'antd';
 import {
   UploadOutlined, ExportOutlined, BorderHorizontalOutlined, BorderVerticleOutlined,
@@ -11,6 +11,7 @@ import {
 } from '@ant-design/icons';
 
 import { Order } from 'src/constants';
+import GithubLogo from 'src/assets/GitHub-Mark-Light-64px.png';
 
 import styles from './styles.module.css';
 
@@ -131,6 +132,12 @@ const ActionsBar = (props) => {
         <Typography.Text>
           { `(${x}, ${y}) [${width}, ${height}]` }
         </Typography.Text>
+      </div>
+
+      <div className={clsx(styles.group, styles.mark)}>
+        <a href="https://github.com/noih/sheet-splitter" target="_blank" rel="noreferrer">
+          <img src={GithubLogo} alt="github" className={styles.github} />
+        </a>
       </div>
     </div>
   );
