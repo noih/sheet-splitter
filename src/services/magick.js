@@ -1,6 +1,7 @@
 import { initializeImageMagick, ImageMagick } from '@imagemagick/magick-wasm';
 import { MagickFormat } from '@imagemagick/magick-wasm/magick-format';
 import { MagickGeometry } from '@imagemagick/magick-wasm/magick-geometry';
+import { MagickColor } from '@imagemagick/magick-wasm/magick-color';
 import { Quantum } from '@imagemagick/magick-wasm/quantum';
 import { Magick } from '@imagemagick/magick-wasm/magick';
 
@@ -35,6 +36,6 @@ export default class MagickService {
   }
 
   static crop(image, x, y, w, h) {
-    image.extent(new MagickGeometry(x, y, w, h));
+    image.extent(new MagickGeometry(x, y, w, h), new MagickColor(0, 0, 0, 0));
   }
 }
