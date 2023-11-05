@@ -40,9 +40,6 @@ class MainPage extends React.Component {
   };
 
   render() {
-    const right = Math.max(0, this.vm.width - this.vm.boxWidth);
-    const bottom = Math.max(0, this.vm.height - this.vm.boxHeight);
-
     return (
       <div className={styles.page}>
         <ActionsBar
@@ -88,8 +85,6 @@ class MainPage extends React.Component {
                 y={this.vm.y}
                 width={this.vm.boxWidth}
                 height={this.vm.boxHeight}
-                right={right}
-                bottom={bottom}
                 onResize={this.vm.onBoxResize}
                 onDrag={this.vm.onBoxDrag}
               >

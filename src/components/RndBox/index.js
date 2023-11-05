@@ -13,7 +13,6 @@ const RndBox = (props) => {
     onResize, onDrag,
 
     x, y,
-    right, bottom,
     width, height,
 
     children
@@ -27,9 +26,7 @@ const RndBox = (props) => {
         cancel=".react-resizable-handle"
         bounds={{
           left: 0,
-          top: 0,
-          right,
-          bottom
+          top: 0
         }}
       >
         <Resizable

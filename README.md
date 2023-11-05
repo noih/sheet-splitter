@@ -8,3 +8,6 @@ A simple serverless sheet splitter for separating images on spritesheet.
 > yarn install
 > yarn run start
 ```
+
+## Other tools
+[Collision Painter](https://github.com/noih/collision-painter/)
